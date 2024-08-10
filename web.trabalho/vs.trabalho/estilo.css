@@ -1,0 +1,43 @@
+body {
+  font-size: 40px;
+  text-align: center;
+}
+header {
+  background-color: blue;
+  color: white;
+}
+h1 {
+  text-align: center;
+  padding-top: 30px;
+  font-size: 40px;
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+  background-color: darkcyan;
+  font-size: 20px;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+main {
+  padding: 2rem;
+}
+
+.intro,
+.services,
+.partners {
+  background-color: #fff;
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

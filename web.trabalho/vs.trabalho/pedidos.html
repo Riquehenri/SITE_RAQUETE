@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido de Produto</title>
+    <link rel="stylesheet" href="estilo.css" />
+    
+</head>
+<body>
+
+    <div class="form-container">
+        <h1>Formulário de Pedido de Produto</h1>
+        <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+        <form action="/submit" method="post">
+            <div class="form-group">
+                <label for="name">Nome Completo:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Telefone:</label>
+                <input type="text" id="phone" name="phone" required>
+            </div>
+
+            <div class="form-group">
+                <label for="address">Endereço de Entrega:</label>
+                <textarea id="address" name="address" rows="4" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="product">Produto:</label>
+                <select id="product" name="product" required>
+                    <option value="produto1">Produto 1</option>
+                    <option value="produto2">Produto 2</option>
+                    <option value="produto3">Produto 3</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Quantidade:</label>
+                <input type="number" id="quantity" name="quantity" min="1" required>
+            </div>
+
+            <div class="form-group">
+                <label>Cor:</label>
+                <input type="radio" id="color1" name="color" value="vermelho" required>
+                <label for="color1">Vermelho</label>
+                <input type="radio" id="color2" name="color" value="azul" required>
+                <label for="color2">Azul</label>
+                <input type="radio" id="color3" name="color" value="verde" required>
+                <label for="color3">Verde</label>
+            </div>
+
+            <div class="form-group">
+                <label for="size">Tamanho:</label>
+                <select id="size" name="size" required>
+                    <option value="pequeno">Pequeno</option>
+                    <option value="medio">Médio</option>
+                    <option value="grande">Grande</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="delivery">Tipo de Entrega:</label>
+                <input type="checkbox" id="standard" name="delivery" value="padrão">
+                <label for="standard">Entrega Padrão</label>
+                <input type="checkbox" id="express" name="delivery" value="expresso">
+                <label for="express">Entrega Expresso</label>
+            </div>
+
+            <div class="form-group">
+                <label for="gift">Embalagem para Presente:</label>
+                <input type="checkbox" id="gift" name="gift">
+                <label for="gift">Sim</label>
+            </div>
+
+            <div class="form-group">
+                <label for="notes">Observações Adicionais:</label>
+                <textarea id="notes" name="notes" rows="4"></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit">Enviar Pedido</button>
+                <button type="reset">Limpar Formulário</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
